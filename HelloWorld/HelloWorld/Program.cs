@@ -10,6 +10,8 @@ namespace Day1
     {
         static void Main(string[] args)
         {
+            int[] x = {1,2,3};
+
             Console.WriteLine("Hello C#~" + args[0]);
             Console.WriteLine("Hello C#~" + args[0]);
             Console.WriteLine("Hello C#~" + args[0]);

@@ -28,7 +28,7 @@ namespace Task4
 
         {
 
-            Console.WriteLine("Multiple of five reached: ", e.Total);
+            Console.WriteLine("Multiple of five reached: {0}", e.Total);
 
         }
     }
@@ -60,7 +60,7 @@ namespace Task4
 
 
 
-    public class MultipleOfFiveEventArgs:EventArgs
+    public class MultipleOfFiveEventArgs : Adder
 
     {
 

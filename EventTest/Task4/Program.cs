@@ -60,7 +60,7 @@ namespace Task4
 
 
 
-    public class MultipleOfFiveEventArgs : Adder
+    public class MultipleOfFiveEventArgs:EventArgs
 
     {
 

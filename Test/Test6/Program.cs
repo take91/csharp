@@ -23,9 +23,7 @@ namespace Test6
                     if (i == 1) { break; }
                     else if (i % 2 == 0) { break; }
                     else if ((j != 1 && i != j) && i % j == 0) { break; }
-                    else if(i==j) {
-                        sum += i;
-                    }
+                    else if (i == j) { sum += i; }
                 }
             }
             Console.WriteLine("1부터 {0} 까지의 소수의 합은 : {1}", input, sum);

@@ -35,16 +35,16 @@ namespace S_Practice
             {
                 while (true)
                 {
-                    string str = reader.ReadLine();
-                    Console.WriteLine(str);
                     int count = 0;
+                    string str = reader.ReadLine();
+                    Console.WriteLine("사용자" + count + ">" + str);
                     foreach (Socket s in Server.list)
                     {
-                        count++;
                         stream = new NetworkStream(s);
 
                         writer = new StreamWriter(stream, encode) { AutoFlush = true };
                         writer.WriteLine("사용자" + count + ">" + str);
+                        count++;
                     }
                 }
             }

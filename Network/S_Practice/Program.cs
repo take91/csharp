@@ -37,13 +37,14 @@ namespace S_Practice
                 {
                     string str = reader.ReadLine();
                     Console.WriteLine(str);
-
+                    int count = 0;
                     foreach (Socket s in Server.list)
                     {
+                        count++;
                         stream = new NetworkStream(s);
 
                         writer = new StreamWriter(stream, encode) { AutoFlush = true };
-                        writer.WriteLine(str);
+                        writer.WriteLine("사용자" + count + ">" + str);
                     }
                 }
             }

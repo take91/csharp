@@ -35,7 +35,7 @@ namespace S_Practice
             {
                 while (true)
                 {
-                    int count = 0;
+                    int count = 1;
                     string str = reader.ReadLine();
                     Console.WriteLine("사용자" + count + ">" + str);
                     foreach (Socket s in Server.list)

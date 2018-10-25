@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="이름을 입력하세요!" HorizontalAlignment="Left" Margin="92,174,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="42" Margin="434,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="24"/>
+        <Button x:Name="btn_SayHello" Content="Button" HorizontalAlignment="Left" Margin="593,182,0,0" VerticalAlignment="Top" Width="108" Height="42" FontSize="20" Click="btn_SayHello_Click"/>
+
+    </Grid>
+</Window>
